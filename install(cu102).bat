@@ -16,7 +16,7 @@ echo "conda install pytorch torchvision torchaudio cudatoolkit=''MANUAL'' -c pyt
 @REM conda install pytorch torchvision torchaudio cudatoolkit=10.2 -c pytorch -y
 
 
-conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch -y
+conda install pytorch torchvision torchaudio pytorch-cuda=11.6 -c pytorch -c nvidia
 
 
 echo "conda install pandas  -y"
