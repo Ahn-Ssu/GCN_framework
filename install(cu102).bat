@@ -13,10 +13,10 @@ conda update conda --all -y
 
 echo "conda install pytorch torchvision torchaudio cudatoolkit=''MANUAL'' -c pytorch -y"
 
-@REM conda install pytorch torchvision torchaudio cudatoolkit=10.2 -c pytorch -y
+@REM conda install pytorch torchvision torchaudio cudatoolkit=10.2 -c pytorch -y / /conda install pytorch torchvision torchaudio pytorch-cuda=11.6 -c pytorch -c nvidia
 
+conda install pytorch==1.12.0 torchvision==0.13.0 torchaudio==0.12.0 cudatoolkit=11.6 -c pytorch -c conda-forge
 
-conda install pytorch torchvision torchaudio pytorch-cuda=11.6 -c pytorch -c nvidia
 
 
 echo "conda install pandas  -y"
@@ -45,7 +45,7 @@ echo "conda install -c anaconda py-xgboost -y"
 conda install -c anaconda py-xgboost -y
 
 
-
+@REM https://data.pyg.org/whl/torch-1.12.0+cu116.html 여기만 되고 있음 113+116 존재 x 
 @REM pip install --no-index torch-scatter -f https://data.pyg.org/whl/torch-$(python -c "import torch; print(torch.__version__)")+cu102.html
 
 
